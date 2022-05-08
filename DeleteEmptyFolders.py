@@ -1,7 +1,9 @@
+#To find Empty Folders and Delete them
+#Does not do rescursive yet
 from os import listdir, walk, rmdir
 
 #Your starting directory
-startpath = "C:\\Users\\guest\\Pictures"
+startpath = "D:\\Norp\\Movies\\Reddit"
 
 class dirObj:
     def __init__(self, DirPath, DirName):
