@@ -1,4 +1,4 @@
-from os import listdir, walk
+from os import listdir, walk, rmdir
 
 #Your starting directory
 startpath = "C:\\Users\\guest\\Pictures"
@@ -16,6 +16,4 @@ for (dirpath, dirname, filenames) in walk(startpath):
 
 for q in dirlist: 
     if not listdir("{}\\{}".format(q.DirPath, q.DirName)):
-        print("{} It's Empty".format("{}\\{}".format(q.DirPath, q.DirName)))
-    else:
-        print("{} There are Files".format("{}\\{}".format(q.DirPath, q.DirName)))
+        rmdir("{}\\{}".format(q.DirPath, q.DirName))
