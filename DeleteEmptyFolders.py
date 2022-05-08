@@ -3,7 +3,7 @@
 from os import listdir, walk, rmdir
 
 #Your starting directory
-startpath = "D:\\Norp\\Movies\\Reddit"
+startpath = "C:\\Users\\guest\\Pictures"
 
 class dirObj:
     def __init__(self, DirPath, DirName):
